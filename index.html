@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        class CustomMatch {
+
+            constructor(num) {
+                this.Num = num
+            }
+
+            plus(num1) {
+                return new CustomMatch(num1 + this.Num);
+            }
+
+
+            minus(num2) {
+                return new CustomMatch(this.Num - num2);
+            }
+
+
+            multiply(num3) {
+                return new CustomMatch(this.Num * num3);
+            }
+
+
+            divide(num4) {
+                return this.Num / num4;
+            }
+
+        }
+
+
+        let aa = new CustomMatch(50)
+
+
+        var result = aa.Plus(6).Minus(30).Multiply(3).Divide(2)
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
